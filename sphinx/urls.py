@@ -17,6 +17,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^answer/', include('sphinx.answer.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^', include('sphinx.answer.urls')),
 ]
