@@ -10,12 +10,13 @@
 <div>
   Please write some questions.
 </div>
-<form>
+<form action="/create" method="post">
+  {% csrf_token %}
   <div class="question">
     <label>
       Question 1:
     </label>
-    <input>
+    <input name="question_1">
     </input>
   </div>
 
@@ -23,7 +24,7 @@
     <label>
       Question 2:
     </label>
-    <input>
+    <input name="question_2">
     </input>
   </div>
   <button>
